@@ -1,45 +1,45 @@
-import { useState } from "react";
-import logo from "./logo.svg";
+import { I18nextProvider } from "react-i18next";
 import "./App.css";
+import styles from "./app.module.css";
+import { useState } from "react";
+import { Navbar } from "./components/navbar/navbar";
+import i18n from "./traducciones/i18n";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+
+import { Home } from "./components/home/home";
+import { Studies } from "./components/studies/studies";
 
 const App = () => {
-  const [count, setCount] = useState(0);
-  console.log("Hola");
+  const [key, setKey] = useState(0);
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    setKey((prevKey) => prevKey + 1);
+    console.log(lng);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test hot module replacement
-          (HMR).
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {" | "}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
+    <I18nextProvider i18n={i18n}>
+      <BrowserRouter basename="/">
+        <div className={styles["App"]}>
+          {/* Language buttons */}
+          <div className={styles["langButtonContainer"]}>
+            <button
+              className={styles["langButtonEn"]}
+              onClick={() => changeLanguage("en")}
+            ></button>
+            <button
+              className={styles["langButtonEs"]}
+              onClick={() => changeLanguage("es")}
+            ></button>
+          </div>
+          <Navbar></Navbar>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Studies" element={<Studies />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </I18nextProvider>
   );
 };
 

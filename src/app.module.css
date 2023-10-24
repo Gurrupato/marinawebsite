@@ -1,0 +1,37 @@
+.App {
+  width: 97vw;
+  padding: 5px;
+  height: 97vh;
+}
+
+.langButtonContainer {
+  width: 99%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.langButtonEs {
+  width: 30px;
+  height: 30px;
+  font-size: small;
+  background-image: url("./images/espana.png");
+  background-size: contain;
+  border: none;
+  background-color: transparent;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.langButtonEn {
+  width: 30px;
+  height: 30px;
+  font-size: small;
+  background-image: url("./images/reino-unido.png");
+  background-size: contain;
+  border: none;
+  background-color: transparent;
+  margin-right: 10px;
+  cursor: pointer;
+}

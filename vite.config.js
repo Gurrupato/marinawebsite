@@ -3,7 +3,12 @@ import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: process.env.NODE_ENV === "production" ? "/mi-app/" : "/",
+  // vite.config.js
+
+  build: {
+    outDir: "build", // O 'dist' si deseas cambiarlo
+  },
+
   plugins: [react()],
   test: {
     globals: true,
