@@ -1,6 +1,10 @@
 {
   "openingMessage": "¡Marina Escobar tiene una Pagina Web!",
   "secondOpeningMessage": "Pero esta en mantenimiento.",
-  "home": "Inicio",
-  "studies": "Estudios"
+
+  "Home": "Inicio",
+  "Studies": "Estudios",
+  "Bio": "Biografia",
+  "Research": "Investigacion",
+  "Publications": "Publicaciones"
 }

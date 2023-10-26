@@ -21,7 +21,7 @@ export const Navbar = () => {
             : styles["navbarButtons"]
         }
       >
-        {t("home")}
+        {t("Home")}
       </Link>
 
       <Link
@@ -29,14 +29,56 @@ export const Navbar = () => {
           setApartado("Studies");
           console.log("Studies");
         }}
-        to="/studies"
+        to="/Studies"
         className={
           apartado == "Studies"
             ? styles["navbarButtonsActivo"]
             : styles["navbarButtons"]
         }
       >
-        {t("studies")}
+        {t("Studies")}
+      </Link>
+      <Link
+        onClick={() => {
+          setApartado("Bio");
+          console.log("Bio");
+        }}
+        to="/Bio"
+        className={
+          apartado == "Bio"
+            ? styles["navbarButtonsActivo"]
+            : styles["navbarButtons"]
+        }
+      >
+        {t("Bio")}
+      </Link>
+      <Link
+        onClick={() => {
+          setApartado("Research");
+          console.log("Research");
+        }}
+        to="/Research"
+        className={
+          apartado == "Research"
+            ? styles["navbarButtonsActivo"]
+            : styles["navbarButtons"]
+        }
+      >
+        {t("Research")}
+      </Link>
+      <Link
+        onClick={() => {
+          setApartado("Publications");
+          console.log("Publications");
+        }}
+        to="/Publications"
+        className={
+          apartado == "Publications"
+            ? styles["navbarButtonsActivo"]
+            : styles["navbarButtons"]
+        }
+      >
+        {t("Publications")}
       </Link>
     </div>
   );

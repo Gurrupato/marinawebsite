@@ -8,6 +8,9 @@ import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 
 import { Home } from "./components/home/home";
 import { Studies } from "./components/studies/studies";
+import { Research } from "./components/research/research";
+import { Publications } from "./components/publications/publications";
+import { Bio } from "./components/bio/bio";
 
 const App = () => {
   const [key, setKey] = useState(0);
@@ -21,7 +24,6 @@ const App = () => {
     <I18nextProvider i18n={i18n}>
       <BrowserRouter basename="/">
         <div className={styles["App"]}>
-          {/* Language buttons */}
           <div className={styles["langButtonContainer"]}>
             <button
               className={styles["langButtonEn"]}
@@ -36,6 +38,9 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Studies" element={<Studies />} />
+            <Route path="/Bio" element={<Bio />} />
+            <Route path="/Research" element={<Research />} />
+            <Route path="/Publications" element={<Publications />} />
           </Routes>
         </div>
       </BrowserRouter>

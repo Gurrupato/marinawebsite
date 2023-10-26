@@ -1,18 +1,17 @@
 import React from "react";
-
-import styles from "./home.module.css";
 import { useTranslation } from "react-i18next";
+import styles from "./publications.module.css";
 
-export const Home = () => {
+export const Publications = () => {
   const { t } = useTranslation();
   return (
     <>
       <div className={styles["navbarUnder"]}>
-        <h1>Aqui viene la imagen de {t("Home")}</h1>
+        <h1>Aqui viene la imagen de {t("Publications")}</h1>
       </div>
       <div>
         <p>{t("openingMessage")}</p>
-        <p>{t("Home")}</p>
+        <p>{t("Publications")}</p>
       </div>
     </>
   );
