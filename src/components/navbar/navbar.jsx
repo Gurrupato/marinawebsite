@@ -6,6 +6,7 @@ import styles from "./navbar.module.css";
 export const Navbar = () => {
   const { t } = useTranslation();
   const [apartado, setApartado] = useState("Home");
+  const [menuVisible, setMenuVisible] = useState(false);
 
   return (
     <div className={styles["navbar"]}>

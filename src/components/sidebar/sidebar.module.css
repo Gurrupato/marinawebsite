@@ -1,0 +1,61 @@
+.sidebarContainer {
+  width: 200px;
+  min-width: 200px;
+  height: 90vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-right: 1px black solid;
+}
+.sidebarImageContainer {
+  margin-bottom: 50px;
+}
+
+.sidebarImageContainer img {
+  width: 94%;
+  height: 94%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 50%;
+  border: 5px solid turquoise;
+}
+.linkContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.link {
+  width: 70%;
+  text-decoration: none;
+  color: blue;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.linkedinIMG {
+  width: 20px;
+  height: 20px;
+}
+.gmailIMG {
+  width: 20px;
+  height: 15px;
+}
+
+.nameContainer {
+  margin-bottom: 10px;
+  width: 100%;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbarUnder {
+    display: none;
+  } /* Inserta aquí los estilos específicos para móviles */
+}

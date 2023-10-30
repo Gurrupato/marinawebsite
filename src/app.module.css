@@ -8,8 +8,9 @@
   width: 99%;
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   justify-content: flex-end;
+  margin-bottom: 5px;
 }
 
 .langButtonEs {
@@ -34,4 +35,21 @@
   background-color: transparent;
   margin-right: 10px;
   cursor: pointer;
+}
+
+.mainInformationContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.secondaryInformationContainer {
+  display: flex;
+  width: 80%;
+  max-width: 800px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
