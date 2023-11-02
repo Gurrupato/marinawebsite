@@ -12,8 +12,8 @@ export const Home = () => {
         <img src={imagen}></img>
       </div>
       <div className={styles["mainContentContainer"]}>
-        <p>{t("openingMessage")}</p>
-        <p>{t("Home")}</p>
+        <h2 className={styles["subtitulo"]}>{t("Home")}</h2>
+        <p>{t("HomeText")}</p>
       </div>
     </>
   );

@@ -18,7 +18,7 @@
   object-fit: contain;
   object-position: center;
   border-radius: 50%;
-  border: 5px solid turquoise;
+  border: 3px solid black;
 }
 .linkContainer {
   width: 100%;
@@ -42,6 +42,7 @@
 .linkedinIMG {
   width: 20px;
   height: 20px;
+  background-color: transparent;
 }
 .gmailIMG {
   width: 20px;
@@ -55,7 +56,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .navbarUnder {
+  .sidebarContainer {
     display: none;
-  } /* Inserta aquí los estilos específicos para móviles */
+  }
 }

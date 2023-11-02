@@ -5,5 +5,16 @@
   "Studies": "Studies",
   "Bio": "Bio",
   "Research": "Research",
-  "Publications": "Publications"
+  "Publications": "Publications",
+  "HomeText": "Marina Escobar-Planas is a PhD student at the Universitat Politècnica de València and the Joint Research Centre of the European Commission. Her research themes include AI ethics, and human-computer interaction. Her current research focuses on the development of safe and reliable conversational agents for children with a human-centric approach. She has been selected as one of the young scientific talents of the city of Seville and is currently finishing her PhD in Computer Science in three years time.",
+  "UniversidadSevilla": "University of Seville",
+  "UniversidadValencia": "Universitat Politecnica de València",
+  "UniversidadSevillaTitulacion": "Bachelor's degree, Mathematics. 2006-2012",
+  "UniversidadSevillaNota": "6.39 (0-10)",
+  "UniversidadSevillaExtra": "Directing the culture club",
+  "UniversidadSevillaTitulacion2": "Master´s degree, Logic, Computer Science and Artificial Intelligence. 2013-2014",
+  "UniversidadSevillaNota2": "9.3 (0-10)",
+  "UniversidadSevillaExtra2": "Machine Learning, Computer Aided Reasoning, Intelligent Techniques in Bioinformatics, Computational Methods in Artificial Life, Automated reasoning, Logic programming, Synthesis, Verification and Reasoning on Intelligent Agents, Bio-inspired computing, Master's Thesis(Módulo de Evaluación de un Sistema de Diálogo destinado a la enseñanza de idiomas).",
+  "UniversidadSevillaExtra3": "Internship at Milao Language (where I did my master's final thesis)",
+  "BioContent": "Marina is a PhD student at the Technical University of Valencia in collaboration with the Joint Research Centre (JRC) of the European Commission. Her research area is natural language processing (NLP) and its impact on human behaviour. She holds a degree in mathematics and a master's in artificial intelligence from the University of Seville. After an internship developing a virtual assistant at a Canadian company, she managed the technical support team at a robotic company and was part of the Robotics, Vision, and Control Research Group at the University of Seville. In 2019, she started supporting the HUMAINT research team of the JRC in human-robot interaction experiments, data visualization, and code testing until she started her PhD in collaboration with the same research team. Passionate about AI and human-robot interaction, she finds the perfect mix between technology and social behaviour. She also likes to spend time traveling, taking pictures, watching series, and playing board games."
 }

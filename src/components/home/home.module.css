@@ -1,6 +1,7 @@
 .navbarUnder {
   width: 100%;
   height: 200px;
+  min-height: 200px;
   max-width: 800px;
   border: 1px solid black;
   border-left: none;
@@ -19,12 +20,28 @@
   justify-content: flex-start;
   align-items: flex-start;
   padding: 20px;
-  width: 100%;
+  width: 95%;
   max-width: 760px;
+  overflow-y: auto;
+  scrollbar-width: 100;
+  -ms-overflow-style: none;
+}
+.mainContentContainer::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.subtitulo {
+  display: none;
 }
 
 @media only screen and (max-width: 768px) {
   .navbarUnder {
     display: none;
   } /* Inserta aquí los estilos específicos para móviles */
+  .subtitulo {
+    display: flex;
+    border-bottom: 1px solid black;
+    width: 100%;
+    background-color: white;
+  }
 }

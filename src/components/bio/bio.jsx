@@ -12,8 +12,10 @@ export const Bio = () => {
         <img src={imagen}></img>
       </div>
       <div className={styles["mainContentContainer"]}>
+        <h2 className={styles["subtitulo"]}>{t("Bio")}</h2>
         <p>{t("openingMessage")}</p>
         <p>{t("Bio")}</p>
+        <p>{t("BioContent")}</p>
       </div>
     </>
   );
