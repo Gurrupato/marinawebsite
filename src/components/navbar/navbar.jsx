@@ -6,7 +6,6 @@ import styles from "./navbar.module.css";
 export const Navbar = () => {
   const { t } = useTranslation();
   const [apartado, setApartado] = useState("Home");
-  const [menuVisible, setMenuVisible] = useState(false);
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   const handleNavbar = () => {
@@ -48,6 +47,20 @@ export const Navbar = () => {
         </Link>
         <Link
           onClick={() => {
+            setApartado("PrevWork");
+            console.log("PrevWork");
+          }}
+          to="/PrevWork"
+          className={
+            apartado == "PrevWork"
+              ? styles["navbarButtonsActivo"]
+              : styles["navbarButtons"]
+          }
+        >
+          {t("PrevWork")}
+        </Link>
+        {/* <Link
+          onClick={() => {
             setApartado("Bio");
             console.log("Bio");
           }}
@@ -59,7 +72,7 @@ export const Navbar = () => {
           }
         >
           {t("Bio")}
-        </Link>
+        </Link> */}
         <Link
           onClick={() => {
             setApartado("Research");
@@ -137,17 +150,17 @@ export const Navbar = () => {
           onClick={() => {
             handleNavbar();
 
-            setApartado("Bio");
-            console.log("Bio");
+            setApartado("prevWork");
+            console.log("prevWork");
           }}
-          to="/Bio"
+          to="/prevWork"
           className={
-            apartado == "Bio"
+            apartado == "prevWork"
               ? styles["navbarButtonsActivo"]
               : styles["navbarButtons"]
           }
         >
-          {t("Bio")}
+          {t("PrevWork")}
         </Link>
         <Link
           onClick={() => {

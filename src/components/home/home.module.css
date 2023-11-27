@@ -7,12 +7,16 @@
   border-left: none;
   position: relative;
   overflow: hidden;
+  object-position: bottom;
 }
 
 .navbarUnder img {
-  min-width: 800px;
-  height: 100%;
+  width: 100%;
+  height: auto;
   position: absolute;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
 }
 .mainContentContainer {
   display: flex;
@@ -36,8 +40,9 @@
 
 @media only screen and (max-width: 768px) {
   .navbarUnder {
-    display: none;
-  } /* Inserta aquí los estilos específicos para móviles */
+    height: 100px;
+    min-height: 100px;
+  }
   .subtitulo {
     display: flex;
     border-bottom: 1px solid black;

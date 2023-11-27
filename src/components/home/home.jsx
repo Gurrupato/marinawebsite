@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./home.module.css";
 import { useTranslation } from "react-i18next";
-import imagen from "../../images/imagenDePrueba.png";
+import imagen from "../../images/home.png";
 
 export const Home = () => {
   const { t } = useTranslation();
@@ -10,9 +10,9 @@ export const Home = () => {
     <>
       <div className={styles["navbarUnder"]}>
         <img src={imagen}></img>
-      </div>
+      </div>{" "}
+      <h2 className={styles["subtitulo"]}>{t("Home")}</h2>
       <div className={styles["mainContentContainer"]}>
-        <h2 className={styles["subtitulo"]}>{t("Home")}</h2>
         <p>{t("HomeText")}</p>
       </div>
     </>

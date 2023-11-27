@@ -10,10 +10,8 @@ export const Research = () => {
       <div className={styles["navbarUnder"]}>
         <img src={imagen}></img>
       </div>
+      <h2 className={styles["subtitulo"]}>{t("Research")}</h2>
       <div className={styles["mainContentContainer"]}>
-        <h2 className={styles["subtitulo"]}>{t("Research")}</h2>
-        <p>{t("openingMessage")}</p>
-        <p>{t("Research")}</p>
         <p>
           Lorem Ipsum es simplemente el texto de relleno de las imprentas y
           archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de
