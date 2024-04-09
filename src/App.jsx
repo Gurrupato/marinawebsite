@@ -10,16 +10,17 @@ import { Home } from "./components/home/home";
 import { Studies } from "./components/studies/studies";
 import { Research } from "./components/research/research";
 import { Publications } from "./components/publications/publications";
-import { Bio } from "./components/bio/bio";
 import { Sidebar } from "./components/sidebar/sidebar";
 import { Prevwork } from "./components/prevWork/prevWork";
 
 const App = () => {
   const [key, setKey] = useState(0);
+  const [selectedLanguaje, setSelectedLanguaje] = useState(navigator.language);
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
     setKey((prevKey) => prevKey + 1);
     console.log(lng);
+    setSelectedLanguaje(lng);
   };
 
   return (
@@ -31,15 +32,28 @@ const App = () => {
             <div className={styles["secondaryInformationContainer"]}>
               <div className={styles["langButtonContainer"]}>
                 <button
-                  className={styles["langButtonEn"]}
-                  onClick={() => changeLanguage("en")}
+                  className={
+                    selectedLanguaje === "en"
+                      ? styles["langButtonEnSelected"]
+                      : styles["langButtonEn"]
+                  }
+                  onClick={() => {
+                    changeLanguage("en");
+                  }}
                 ></button>
                 <button
-                  className={styles["langButtonEs"]}
-                  onClick={() => changeLanguage("es")}
+                  className={
+                    selectedLanguaje === "es"
+                      ? styles["langButtonEsSelected"]
+                      : styles["langButtonEs"]
+                  }
+                  onClick={() => {
+                    changeLanguage("es");
+                  }}
                 ></button>
               </div>
               <Navbar></Navbar>
+
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/Studies" element={<Studies />} />

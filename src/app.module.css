@@ -24,6 +24,20 @@
   background-color: transparent;
   margin-right: 10px;
   cursor: pointer;
+  opacity: 50%;
+}
+.langButtonEsSelected {
+  width: 30px;
+  height: 30px;
+  font-size: small;
+  background-image: url("./images/espana.png");
+  background-size: contain;
+  border: none;
+  background-color: transparent;
+  margin-right: 10px;
+  cursor: pointer;
+
+  border-radius: 50%;
 }
 
 .langButtonEn {
@@ -36,6 +50,20 @@
   background-color: transparent;
   margin-right: 10px;
   cursor: pointer;
+  opacity: 50%;
+}
+.langButtonEnSelected {
+  width: 30px;
+  height: 30px;
+  font-size: small;
+  background-image: url("./images/reino-unido.png");
+  background-size: contain;
+  border: none;
+  background-color: transparent;
+  margin-right: 10px;
+  cursor: pointer;
+
+  border-radius: 50%;
 }
 
 .mainInformationContainer {

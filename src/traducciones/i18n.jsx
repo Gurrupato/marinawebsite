@@ -6,6 +6,7 @@ i18n
   .use(HttpBackend)
   .use(initReactI18next)
   .init({
+    lng: navigator.language || "es",
     fallbackLng: "es",
     debug: false,
     ns: ["translations"],

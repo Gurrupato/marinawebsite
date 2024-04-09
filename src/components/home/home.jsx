@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./home.module.css";
 import { useTranslation } from "react-i18next";
-import imagen from "../../images/home.png";
+import imagen from "../../images/home2.png";
 
 export const Home = () => {
   const { t } = useTranslation();

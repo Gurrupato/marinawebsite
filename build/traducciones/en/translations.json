@@ -2,87 +2,255 @@
   "openingMessage": "Marina Escobar has a Webpage!",
   "secondOpeningMessage": "But we are still working on it.",
   "Home": "Home",
-  "Studies": "Studies",
+  "Studies": "Education",
   "Bio": "Bio",
   "PrevWork": "Previous Work",
   "Research": "Research",
   "Publications": "Publications",
-  "HomeText": "Marina Escobar-Planas is a PhD student at the Universitat Politècnica de València and the Joint Research Centre of the European Commission. Her research themes include AI ethics, and human-computer interaction. Her current research focuses on the development of safe and reliable conversational agents for children with a human-centric approach. She has been selected as one of the young scientific talents of the city of Seville and is currently finishing her PhD in Computer Science in three years time.",
+  "tasks": "Tasks",
+  "asignaturas": "Subjects",
+  "HomeText": "Marina Escobar-Planas is a PhD student at the Polytechnic University of Valencia and the Joint Research Centre of the European Commission. Her research topics include ethical artificial intelligence and human-computer interaction. Her current research focuses on the development of trustworthy conversational agents for children with a human-centred approach. She has been selected as one of the young scientific talents of the city of Seville and is currently finishing her PhD in Computer Science in three years.",
   "articuloCompleto": "You can see the whole article here.",
-  "UniversidadSevilla": "University of Seville",
-  "UniversidadValencia": "Universitat Politecnica de València",
-  "UniversidadSevillaTitulacion": "Bachelor's degree, Mathematics. 2006-2012 | 6.39 (0-10)",
-
-  "UniversidadSevillaExtra": "Directing the culture club",
-  "UniversidadSevillaTitulacion2": "Master´s degree, Logic, Computer Science and Artificial Intelligence. 2013-2014 | 9.3 (0-10)",
-
-  "UniversidadSevillaExtra2": "Machine Learning, Computer Aided Reasoning, Intelligent Techniques in Bioinformatics, Computational Methods in Artificial Life, Automated reasoning, Logic programming, Synthesis, Verification and Reasoning on Intelligent Agents, Bio-inspired computing, Master's Thesis(Módulo de Evaluación de un Sistema de Diálogo destinado a la enseñanza de idiomas).",
-  "UniversidadSevillaExtra3": "Internship at Milao Language (where I did my master's final thesis)",
-  "BioContent": "Marina is a PhD student at the Technical University of Valencia in collaboration with the Joint Research Centre (JRC) of the European Commission. Her research area is natural language processing (NLP) and its impact on human behaviour. She holds a degree in mathematics and a master's in artificial intelligence from the University of Seville. After an internship developing a virtual assistant at a Canadian company, she managed the technical support team at a robotic company and was part of the Robotics, Vision, and Control Research Group at the University of Seville. In 2019, she started supporting the HUMAINT research team of the JRC in human-robot interaction experiments, data visualization, and code testing until she started her PhD in collaboration with the same research team. Passionate about AI and human-robot interaction, she finds the perfect mix between technology and social behaviour. She also likes to spend time traveling, taking pictures, watching series, and playing board games.",
-  "PrevContent": {
-    "1": {
-      "titulo": "PhD Internship",
-      "place": "Joint Research Centre - European Commission · Jornada completa",
-      "fecha": "dic. 2020 - actualidad · 3 años. Sevilla, Andalucía, España",
+  "studies": [
+    {
+      "place": "Polytechnic University of Valencia",
+      "titulo": "Doctorate",
+      "fecha": "2021-2024",
+      "nota": "",
       "texto": [
-        "PhD studies at the Universidad Politécnica de Valencia in collaboration with the Joint Research Centre"
+        "The PhD Programme in Computer Science is the result of a synergy between the research lines in software and hardware at the Polytechnic University of Valencia. The main objective is to train PhDs in the field of Computer Science, with the capacity to carry out research, development, innovation and technology transfer, as well as to direct or collaborate with other researchers and professionals in their field of competence. The training objectives of the programme allow students to obtain a multidisciplinary and generalist training."
+      ],
+      "extras": [
+        "Scholarship awarded by the European Commission as part of the 'Collaborative Doctoral Partnership' programme.",
+        "Part of the [HUMAINT](https://ai-watch.ec.europa.eu/humaint_en) research group of the European Commission's Joint Research Centre.",
+        "Collaboration with the [Pattern Recognition and Human Language Technology (PRHLT)](https://www.prhlt.upv.es/) research group."
+      ],
+      "asignaturas": [
+        "Scientific Communication",
+        "Qualitative Research Methodologies in Social Sciences and Humanities",
+        "Statistics and Mathematical Methods for Research",
+        "Statistics and Mathematical Methods for Research",
+        "Applied Research Methodology",
+        "Doctoral Training at the UPV"
       ]
     },
-    "2": {
+    {
+      "place": "University of Seville",
+      "titulo": "Master en Logic, Computer Science and Artificial Intelligence.",
+      "fecha": " 2013-2014",
+      "nota": "9.3 (0-10)",
+      "texto": [
+        "The Master's Degree in Logic, Computation and Artificial Intelligence provides specialised, multidisciplinary postgraduate training that enables graduates to join both the data analysis, research and development departments of a company and various public bodies in the field of research."
+      ],
+      "extras": ["Internship at Milao Language"],
+      "asignaturas": [
+        "Machine Learning",
+        "Bio-inspired Computing",
+        "Computational Methods in Artificial Life",
+        "Natural Language Processing",
+        "Logic Programming",
+        "Automatic Reasoning",
+        "Intelligent Techniques in Bioinformatics",
+        "Intelligent Techniques in Bioinformatics"
+      ]
+    },
+    {
+      "place": "University of Seville",
+      "titulo": "Bachelor´s Degree in Mathematics",
+      "fecha": " 2006-2012",
+      "nota": "6.39 (0-10)",
+      "texto": [
+        "The Bachelor's Degree in Mathematics at the University of Seville focuses on the development of analytical, synthesis, abstraction, modelling and problem-solving skills, which are fundamental to logical reasoning. This programme is key to the advancement of various scientific and technological disciplines, preparing graduates for jobs in science or even in business."
+      ],
+      "extras": [
+        "Direction of the Aula de Cultura",
+        "Direction and organisation of the Cauchynillos"
+      ],
+      "asignaturas": [
+        "Linear Algebra",
+        "Elements of Mathematical Analysis",
+        "General Physics",
+        "Computer Science",
+        "Mathematical Analysis (I and II)",
+        "Numerical Calculus (I, II and III)",
+        "Elements of Differential Geometry and Topology",
+        "Geometry",
+        "Calculus of Probabilities",
+        "Theoretical Physics",
+        "Extension of the Theory of Functions of Several Variables",
+        "Ordinary Differential Equations",
+        "Effective Algebra",
+        "Computation",
+        "Introduction to Algebraic Topology",
+        "Mathematical Statistics",
+        "Local Geometry of Curves and Surfaces",
+        "Linear Programming",
+        "Algebra",
+        "Complex Variables and Fourier Analysis",
+        "Extension of Numerical Calculus",
+        "Regular Surfaces",
+        "Functional Analysis",
+        "Algebraic Structures",
+        "Complex Variables",
+        "Differentiable Variables",
+        "Partial Differential Equations and Functional Analysis",
+        "Elements of Classical Homology",
+        "Commutative Algebra",
+        "Calculus in Varieties",
+        "Mathematical Logic",
+        "Nonlinear Programming",
+        "Deterministic Models in Operations Research"
+      ]
+    }
+  ],
+  "BioContent": "I am a PhD student at the Technical University of Valencia in collaboration with the Joint Research Centre (JRC) of the European Commission. My research area is natural language processing (NLP) and its impact on human behaviour. I hold a degree in mathematics and a master's in artificial intelligence from the University of Seville. After an internship developing a virtual assistant at a Canadian company, I managed the technical support team at a robotics company and was part of the Robotics, Vision, and Control Research Group at the University of Seville. In 2019, I started supporting the HUMAINT research team of the JRC in human-robot interaction experiments, data visualization, and code testing until I started my PhD in collaboration with the same research team. Passionate about AI and human-robot interaction, I find the perfect mix between technology and social behaviour. I also like to spend time traveling, taking pictures, watching series, and playing board games.",
+  "PrevContent": [
+    {
+      "titulo": "Researcher",
+      "place": "Joint Research Centre - European Commission",
+      "fecha": "dec. 2020 - dec 2023 · 3 years. Seville, Spain",
+      "texto": [
+        "The mission of the Joint Research Centre (JRC) is to provide customised scientific and technical support for the conception, development, implementation and monitoring of EU policies. As a service of the European Commission, the JRC functions as a reference centre of science and technology for the Union. Close to the political decision-making processes, it serves the common interest of the Member States, while remaining independent of partisan interest, whether private or national."
+      ],
+      "extra": [
+        "Doctorate student through the Collaborative Doctoral Partnership",
+        "Research on how to develop conversational agents that are reliable and safe for children",
+        "Member of the [HUMAINT](https://ai-watch.ec.europa.eu/humaint_en) group of the European Commission",
+        "Member of the [Centre for Algorithmic Transparency (ECAT)](https://algorithmic-transparency.ec.europa.eu/index_en)"
+      ],
+      "tasks": [
+        "Literature review in different areas",
+        "Organisation of and participation in different seminars",
+        "Organisation of experiments, including focus groups and user studies among others",
+        "Development of ethical artificial intelligence algorithms",
+        "Quantitative and qualitative analysis of results",
+        "Scientific dissemination at conferences and events",
+        "Supervision of projects with students from the university"
+      ]
+    },
+    {
       "titulo": "Technical Expert",
-      "place": "Freelance · Jornada completa",
-      "fecha": "ene. 2019 - dic. 2020 · 2 años. Sevilla y alrededores, España",
+      "place": "Freelance",
+      "fecha": "jan. 2019 - dec. 2020 · 2 years. Seville, Spain",
       "texto": [
-        "Supporting the HUMAINT group of the Joint Research Center (through Seidor): Programming robots for research in human robot interaction (HRI), analyzing data from the experiments, providing visualization of the data, and testing some machine learning code in fairness.",
-        "Tutor: Mathematics, Programming."
+        "Supporting the HUMAINT group of the Joint Research Center (through Seidor): Programming robots for research in human robot interaction (HRI), analyzing data from the experiments, providing visualization of the data, and testing some machine learning code in fairness."
+      ],
+      "extra": [],
+      "tasks": [
+        "Robot programming for human-robot interaction (HRI) research",
+        "Data analysis and visualisation",
+        "Testing of ethical artificial intelligence algorithms",
+        "Object-oriented programming for Web of Science information extraction",
+        "Assisting in the supervision of projects with Master students",
+        "Mathematics classes",
+        "Programming classes"
       ]
     },
-    "3": {
+    {
       "titulo": "RPA and AI Developer",
       "place": "MCCM Innovations",
-      "fecha": "ago. 2018 - dic. 2018 · 5 meses. United Kingdom",
-      "texto": ["Developing RPA solutions for BP"]
+      "fecha": "aug. 2018 - dec. 2018 · 5 months. United Kingdom",
+      "texto": [
+        "MCCM Innovations specializes in creating custom software solutions designed to enhance business efficiency and customer service. The company's focus is on streamlining operations, minimizing errors, and incorporating advanced data analytics. Committed to innovation and tailored approaches, MCCM Innovations offers unique, user-friendly tools that are customized to meet the specific needs of each client. By automating complex processes and providing expert consultation, the company empowers businesses of all sizes to excel in the digital era, promoting growth and operational excellence."
+      ],
+      "extra": [],
+      "tasks": [
+        "Development of a robotic process automation model for records management at BP."
+      ]
     },
-    "4": {
-      "titulo": "Internship in Artificial Intelligence at Computer Vision",
+    {
+      "titulo": "Computer Vision Developer",
       "place": "AICIA (Andalusian Association for Research and Industrial Cooperation)",
-      "fecha": "ene. 2018 - ago. 2018 · 8 mese. Sevilla y alrededores, España",
-      "texto": ["Using deep learning for point clouds classification."]
+      "fecha": "jan. 2018 - aug. 2018 · 8 months. Seville, Spain",
+      "texto": [
+        "AICIA is a Technology Centre linked to the Higher Technical School of Engineering of Seville, whose aim is to promote, guide and develop industrial research with the basic objective of benefiting society and industry at both Andalusian and international level. It has national and regional qualification as an Innovation and Technology Centre (CIT)."
+      ],
+      "extra": [
+        "Collaboration with the Robotics, Vision and Control Laboratory (GRVC)"
+      ],
+      "tasks": ["Use of deep neural networks for point cloud segmentation."]
     },
-    "5": {
+    {
       "titulo": "Technical Office Manager, Artificial Intelligence",
       "place": "Macco Robotics",
-      "fecha": "oct. 2016 - nov. 2017 · 1 año 2 meses. Sevilla y alrededores, España",
+      "fecha": "oct. 2016 - nov. 2017 · 1 year 2 months. Seville, Spain",
       "texto": [
+        "Macco Robotics is an engineering company specialised in the design and development of creative and friendly robots for different sectors, such as leisure and entertainment, retail, marketing, health, education, tourism and domestic robots. They work in two ways: developing their own robots, and representing third party brands, to which they develop the necessary software to generate the desired end product. Their mission is to bring robotics closer to people, on a daily basis, so that robotics can make us more human."
+      ],
+      "extra": [],
+      "tasks": [
         "Managing my own team to develop different programs for robots in different areas (health, education, marketing, etc.).",
         "Programming robots to speak and interact with people using NLP programs from each robot and taking care of the naturalness.",
         "Travelling to take care of technical support around the world and managing international company relations.",
         "Giving conferences about Robotics: Fnac (Madrid), Sopela business market (Bilbao), Inovaction Week (Pamplona), etc."
       ]
     },
-    "6": {
-      "titulo": "Internship Developing Computational Linguistics",
+    {
+      "titulo": "Computational Linguistics Developer",
       "place": "Milao Language Inc.",
-      "fecha": "feb. 2014 - oct. 2014 · 9 meses. Seville",
+      "fecha": "feb. 2014 - oct. 2014 · 9 months. Seville",
       "texto": [
-        "Develop of a virtual assistant for Spanish teaching.",
+        "Milao developed a language-learning software intended to help all learners break down any language barriers. The company's software provides task-oriented dialogues where learners have the opportunity to practice their previously-learned vocabulary and grammatical structures, enabling people to have an on-demand language tutor."
+      ],
+      "extra": ["Develop of a virtual assistant for Spanish teaching."],
+      "tasks": [
         "Active part at strategic reunions about the program functioning.",
         "Teamwork with linguists for lexicon input using grammar and ontology at basic levels.",
         "Search and classification of dialogue system errors (Testing).",
         "Illustration of the company's Avatar.",
-        "Culminating practice I developed a Master's thesis about the dialogue systems and an improvement of the Milao's rating module: ``Modulo de evaluacion de un Sistema de Dialogo destinado a la enseñanza de idiomas´´ directed by Jose Francisco Quesada Moreno."
+        "Culminating practice I developed a Master's thesis about the dialogue systems and an improvement of the Milao's rating module: ``Modulo de evaluacion de un Sistema de Dialogo destinado a la enseñanza de idiomas directed by Jose Francisco Quesada Moreno´´ "
       ]
     }
-  },
+  ],
   "publications": {
     "1": "Reporting incidents to an adult is the top recommendation for youth victims facing ullying. At the same time, victims need to develop strategies to use when they are facing their offenders: counter aggression and making a safety plan. This paper presents design considerations for a conversational system being a training center for a victim to learn and try such strategies. We first detail what is bullying and existing preventive measures. We then detail specific features of such a conversational system and we define a set of functionalities and dialog design considerations required to ensure compliance with the preceding features. We close with the presentation of a   simple illustrative implementation.",
     "2": "Conversational agents (CAs) such as Amazon Alexa, Google Assistant or website chatbots are becoming very popular in some countries, and despite their adult-centered design, these devices are becoming part of children's lives, creating the need for children-centric and trustworthy systems. This thesis aims to study CAs, with a special focus on children and  trustworthiness, in order to identify the main aspects and criteria for their evaluation and improvement, and creating methodologies contributing to the design of trustworthy, child-centred CAs.",
     "3": "Conversational agents (CAs), such as chatbots or home assistants, have gained a lot of popularity in the last decade  and, despite their adult-centred design, have become part of many children’s lives. However, children’s voices, behaviours or needs differ from adults, and these differences pose a challenge for CAs. In addition, considering the vulnerability of children, there is a clear need for the development of trustworthy systems that take children’s needs into account. In this article we present relevant ethical guidelines on AI and summarize our work on adapting them to the specific case of CAs and children. In particular, we present some concrete recommendations for developers to support the ethical design of CAs for children.",
-    "4": " Conversational agents (CAs) have been increasingly used in various domains, including education, health and entertainment. One of the growing areas of research is the use of CAs with children. However, the development and deployment of CAs for children come with many specific challenges and ethical and social responsibility concerns. This chapter aims to review the related work on CAs and children, point out the most popular topics and identify opportunities and risks. We also present our proposal for ethical guidelines on the development of trustworthy artificial intelligence (AI), which provide a framework for the ethical design and deployment of CAs with children. The chapter highlights, among other principles, the importance of transparency and inclusivity to safeguard user rights in AI technologies. Additionally, we present the adaptation of previous AI ethical guidelines to the specific case of CAs and children, highlighting the importance of data protection and human agency. Finally, the application of ethical guidelines to the design of a conversational agent is presented, serving as an example of how these guidelines can be integrated into the development process of these systems. Ethical principles should guide the research and development of CAs for children to enhance their learning and social development.",
-    "5": "PLACEHOLDER",
+    "4": "Conversational agents (CAs) have been increasingly used in various domains, including education, health and entertainment. One of the growing areas of research is the use of CAs with children. However, the development and deployment of CAs for children come with many specific challenges and ethical and social responsibility concerns. This chapter aims to review the related work on CAs and children, point out the most popular topics and identify opportunities and risks. We also present our proposal for ethical guidelines on the development of trustworthy artificial intelligence (AI), which provide a framework for the ethical design and deployment of CAs with children. The chapter highlights, among other principles, the importance of transparency and inclusivity to safeguard user rights in AI technologies. Additionally, we present the adaptation of previous AI ethical guidelines to the specific case of CAs and children, highlighting the importance of data protection and human agency. Finally, the application of ethical guidelines to the design of a conversational agent is presented, serving as an example of how these guidelines can be integrated into the development process of these systems. Ethical principles should guide the research and development of CAs for children to enhance their learning and social development.",
+    "5": "Conversational agents (CAs) have been increasingly used in various domains, including education, health and entertainment. One of the growing areas of research is the use of CAs with children. However, the development and deployment of CAs for children come with many specific challenges and ethical and social responsibility concerns. This chapter aims to review the related work on CAs and children, point out the most popular topics and identify opportunities and risks. We also present our proposal for ethical guidelines on the development of trustworthy artificial intelligence (AI), which provide a framework for the ethical design and deployment of CAs with children. The chapter highlights, among other principles, the importance of transparency and inclusivity to safeguard user rights in AI technologies. Additionally, we present the adaptation of previous AI ethical guidelines to the specific case of CAs and children, highlighting the importance of data protection and human agency. Finally, the application of ethical guidelines to the design of a conversational agent is presented, serving as an example of how these guidelines can be integrated into the development process of these systems. Ethical principles should guide the research and development of CAs for children to enhance their learning and social development.",
     "6": "Conversational agents (CAs) embodied in speakers or chatbots are becoming very popular in some countries, and despite their adult-centred design, they have become part of children's lives, generating a need for children-centric trustworthy systems. This paper opportunities, challenges and risks brought by CAs when used by children. We then consider relevant ethical guidelines for AI and adapt them to this particular system and population, using a Delphi methodology with a set of experts from different disciplines. From this analysis, we propose specific guidelines to help CAs developers improve their design towards trustworthiness and children.",
     "7": "The design of child-centred, intelligent and collaborative robots is a challenging endeavour, which requires to understand how the implemented robot behaviours and collaboration paradigms   affect children's perception about the robot. This paper  presents the results of a set of semi-structured interviews of  N=81, 5 to 8 years old children who previously interacted in    pairs with a robot in the context of a problem-solving task. We manipulated two different factors of the robot behaviour:  cognitive reliability in logic game movements (optimal vs sub-optimal) and expressivity in the communication (expressive   vs neutral) and we assigned the children in one of the four   conditions. At post-intervention interviews, we examined   children's perceptions on the robot's attributions, collaboration and social role. Results indicate that a robot's cognitive reliability shapes the helping relationship between  the children and the robot, while …",
     "8": "This report proposes a set of science-for-policy future directions for AI and child’s rights. It connects research and policy to gain insights by the interplay among different stakeholders and to go beyond the identification of ethical guidelines towards methods for practical future implementations. For the formulation of the proposed directions, we considered the current relevant policy initiatives by major international organizations and the recent coordinated actions on AI by the European Commission as well as the state-of-the art of the scientific work on AI-based technologies for children with a focus on three applications, conversational agents, recommender systems and robotic systems. In addition, we took into consideration the results of two workshops with young people and three workshops with experts and policymakers that contributed to the formulation of a set of requirements, methods and knowledge gaps as an integrated agenda for research and policy on AI and the rights of the child.",
     "9": "Human collaboration is more likely to lead to cognitive growth when all group-members are actively involved in the collaborative process. However, there are cases that intragroup relationships need support. In this paper, we present an autonomous robotic system designed to interact with a pair of children in a problem-solving setting, aiming to understand how the robot behaviour impacts the group-members’ social dynamics. We developed an autonomous system with the Haru robot which we evaluated with an experimental study with 5-8yo children (N =84) to test the impact of the robot’s cognitive reliability and social  positioning on human-to-human social dynamics, task performance and help-seeking behaviour. All participants took part in a baseline session (without the robot), an intervention (with the robot in a turn-taking setting) and an evaluation session (with a robot in a voluntary interaction setting)."
-  }
+  },
+  "research": [
+    "Driven by a passion for developing technologies that positively impact society, my research as a mathematician specialized in artificial intelligence and natural language processing focuses on the field of human-computer interaction. My journey is guided by a commitment to developing trustworthy and ethically aligned AI technologies, particularly those that interact with our society's most impressionable members – children.",
+    "In my doctoral thesis, which is in its final stages, I explore the rapidly evolving field of Conversational Agents (CAs). These technologies are increasingly integrated into our daily lives, yet the full extent of their impact on society remains to be fully understood. Aligning with the European Commission's push for a human-centered approach to AI, my work emphasizes the importance of trustworthiness in AI systems, especially when these systems engage with children, who are not only naturally drawn to this technology but also uniquely vulnerable due to their ongoing cognitive and socio-emotional development.",
+    "My research is not just theoretical; it is deeply practical and user-focused. It involves evaluation and development of CAs that respect the specific rights and needs of children. This involves conducting experimental studies involving real users and applying standards for evaluating the trustworthiness of AI systems. The goal is to ensure that these advanced technological tools not only serve our society but also safeguard the well-being and development of our children.",
+    "Through my work, I aim to contribute to the broader discourse on AI and ethics, particularly in the realm of natural language processing and human-AI interaction. The ultimate objective of my research is to pave the way for the creation of AI systems that are not only intelligent and efficient but also ethical and beneficial to diverse communities.",
+    "For a detailed overview of my scholarly contributions, you are welcome to visit the publications section of this webpage or explore my profile on Google Scholar."
+  ],
+  "voluntariado": "Voluntariado",
+  "voluntariados": [
+    {
+      "nombre": "Part of the reconciliation team",
+      "descripcion": "We bring interaction and fun to events (Culture promotion, paper craft, quizzes, gymkhanas, … )",
+      "place": "Guardianes",
+      "date": "jun. 2015 - ene. 2018 · 2 years 8 months"
+    },
+    {
+      "nombre": "Temporary fostering of children",
+      "descripcion": "Caravanas sin Fronteras, after Bosnia's war, decided to bring children of both factions to Spain. That way they could learn all that they have in common. My family took in, an awesome girl of my age. She came back a few summers and we still keep in touch. I even had the privilege to go to her place the 2005's summer.",
+      "place": "Caravanas sin Fronteras",
+      "date": "jun. 2001 - ago. 2007 · 6 years 3 months"
+    },
+    {
+      "nombre": "Support for fundraising events",
+      "descripcion": "I went to help in the the 50th anniversary party of the organization. They put me in the bar to attend clients.",
+      "place": "Intermon Oxfam",
+      "date": "aug. 2006 · 1 month"
+    },
+    {
+      "nombre": "Science communicator",
+      "descripcion": "",
+      "place": "A Scientist in your Andalusian school",
+      "date": "2021-2022 · 2 years"
+    },
+    {
+      "nombre": "Organization",
+      "descripcion": "",
+      "place": "AndaluzIA",
+      "date": "2022-2023 · 1 year"
+    }
+  ]
 }

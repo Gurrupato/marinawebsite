@@ -1,44 +1,89 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styles from "./navbar.module.css";
+import imagen from "../../images/rol.png";
 
 export const Navbar = () => {
   const { t } = useTranslation();
-  const [apartado, setApartado] = useState("Home");
+  const [apartado, setApartado] = useState();
   const [navbarOpen, setNavbarOpen] = useState(false);
+  //_________________________________________________________________________
+  const [rol, setRol] = useState("close");
+
+  const MyComponent = () => {
+    const [keySequence, setKeySequence] = useState([]);
+    const sequenceToMatch = ["r", "o", "l"];
+    const timeLimit = 2000; // tiempo en milisegundos (2 segundos en este caso)
+
+    useEffect(() => {
+      const handleKeyPress = (event) => {
+        setKeySequence((prevSequence) =>
+          [...prevSequence, event.key].slice(-3)
+        ); // Mantener solo las últimas 3 teclas
+      };
+
+      window.addEventListener("keydown", handleKeyPress);
+
+      return () => {
+        window.removeEventListener("keydown", handleKeyPress);
+      };
+    }, []);
+
+    useEffect(() => {
+      if (keySequence.length === 3) {
+        const isMatch = sequenceToMatch.every(
+          (key, index) => key === keySequence[index]
+        );
+
+        if (isMatch) {
+          myFunction();
+        }
+
+        // Restablece la secuencia después de un tiempo límite
+        const timeout = setTimeout(() => setKeySequence([]), timeLimit);
+
+        return () => clearTimeout(timeout);
+      }
+    }, [keySequence]);
+
+    const myFunction = () => {
+      console.log("Secuencia R, O, L detectada");
+      setRol("open");
+    };
+  };
+  MyComponent();
+
+  //_________________________________________________________________________
 
   const handleNavbar = () => {
     navbarOpen ? setNavbarOpen(false) : setNavbarOpen(true);
     console.log(navbarOpen);
   };
 
+  const location = useLocation();
+
+  useEffect(() => {
+    setApartado(location.pathname);
+  });
+
   return (
     <div className={styles["navbarContainer"]}>
       <div className={styles["navbar"]}>
         <Link
-          onClick={() => {
-            setApartado("Home");
-            console.log("Home");
-          }}
           to="/"
           className={
-            apartado == "Home"
+            apartado == "/"
               ? styles["navbarButtonsActivo"]
               : styles["navbarButtons"]
           }
         >
           {t("Home")}
         </Link>
-
         <Link
-          onClick={() => {
-            setApartado("Studies");
-            console.log("Studies");
-          }}
           to="/Studies"
           className={
-            apartado == "Studies"
+            apartado == "/Studies"
               ? styles["navbarButtonsActivo"]
               : styles["navbarButtons"]
           }
@@ -46,41 +91,19 @@ export const Navbar = () => {
           {t("Studies")}
         </Link>
         <Link
-          onClick={() => {
-            setApartado("PrevWork");
-            console.log("PrevWork");
-          }}
           to="/PrevWork"
           className={
-            apartado == "PrevWork"
+            apartado == "/PrevWork"
               ? styles["navbarButtonsActivo"]
               : styles["navbarButtons"]
           }
         >
           {t("PrevWork")}
         </Link>
-        {/* <Link
-          onClick={() => {
-            setApartado("Bio");
-            console.log("Bio");
-          }}
-          to="/Bio"
-          className={
-            apartado == "Bio"
-              ? styles["navbarButtonsActivo"]
-              : styles["navbarButtons"]
-          }
-        >
-          {t("Bio")}
-        </Link> */}
         <Link
-          onClick={() => {
-            setApartado("Research");
-            console.log("Research");
-          }}
           to="/Research"
           className={
-            apartado == "Research"
+            apartado == "/Research"
               ? styles["navbarButtonsActivo"]
               : styles["navbarButtons"]
           }
@@ -88,13 +111,9 @@ export const Navbar = () => {
           {t("Research")}
         </Link>
         <Link
-          onClick={() => {
-            setApartado("Publications");
-            console.log("Publications");
-          }}
           to="/Publications"
           className={
-            apartado == "Publications"
+            apartado == "/Publications"
               ? styles["navbarButtonsActivo"]
               : styles["navbarButtons"]
           }
@@ -193,6 +212,17 @@ export const Navbar = () => {
         >
           {t("Publications")}
         </Link>
+      </div>
+      <div className={rol === "open" ? styles["rolOpen"] : styles["rolClose"]}>
+        <div className={styles["navbarUnder"]}>
+          <img src={imagen}></img>
+        </div>
+
+        <div>ME GUSTA EL ROL</div>
+
+        <div>
+          <button onClick={() => setRol("close")}>CLOSE</button>
+        </div>
       </div>
     </div>
   );
